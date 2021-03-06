@@ -28,13 +28,13 @@ function setup(){
     
      createCanvas(innerWidth,innerHeight);
      background(200);
-     button = createButton('"Super Buu" ');
+     button = createButton('"Main Menu" ');
      button.position(200, 575);
      button.mousePressed(songPlay4);
     
     createCanvas(innerWidth,innerHeight);
      background(200);
-     button = createButton(' "Main Menu" ');
+     button = createButton(' "Super Buu" ');
      button.position(200, 600);
      button.mousePressed(songPlay5);
     
@@ -76,7 +76,6 @@ function songPlay3(){
           song3.play();
           background('pink');
       }
-}
 
 }
 
