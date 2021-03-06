@@ -2,23 +2,28 @@ let song;
 
 function preload() {
 song1 = loadSound("deja-vu.mp3");
-song2 = loadSound("03 MainMenu.mp3");
-song3 = loadSound("28 - SuperBuu.mp3");
-
+song2 = loadSound("run-vine-sound-effect.mp3");
+song3 = loadSound("ali-as-meme-intro-original-download.mp3")
 
 }
 function setup(){
      createCanvas(innerWidth,innerHeight);
      background(200);
-     button = createButton('Play');
-     button.position(19, 19);
+     button = createButton('Deja Vu');
+     button.position(200, 19);
      button.mousePressed(songPlay1);
     
      createCanvas(innerWidth,innerHeight);
      background(200);
-     button = createButton('Play');
-     button.position(19, 19);
+     button = createButton(' "Run" ');
+     button.position(200, 50);
      button.mousePressed(songPlay2); 
+    
+    createCanvas(innerWidth,innerHeight);
+     background(200);
+     button = createButton('"Ali-a Intro" ');
+     button.position(200, 75);
+     button.mousePressed(songPlay3); 
     
     }
 function draw() {
@@ -46,5 +51,16 @@ function songPlay2(){
       else{
           song2.play();
           background('yellow');
+      }
+}
+function songPlay3(){
+    if(song3.isPlaying()) {
+        song3.stop();
+        background('purple');
+    
+}
+      else{
+          song3.play();
+          background('pink');
       }
 }
