@@ -10,19 +10,19 @@ function setup(){
      createCanvas(innerWidth,innerHeight);
      background(200);
      button = createButton('Deja Vu');
-     button.position(200, 19);
+     button.position(200, 500);
      button.mousePressed(songPlay1);
     
      createCanvas(innerWidth,innerHeight);
      background(200);
      button = createButton(' "Run" ');
-     button.position(200, 50);
+     button.position(200, 525);
      button.mousePressed(songPlay2); 
     
     createCanvas(innerWidth,innerHeight);
      background(200);
      button = createButton('"Ali-a Intro" ');
-     button.position(200, 75);
+     button.position(200, 550);
      button.mousePressed(songPlay3); 
     
     }
