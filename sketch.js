@@ -45,12 +45,12 @@ function draw() {
 function songPlay1(){
         if(song1.isPlaying()) {
         song1.stop();
-        background('blue');
+        background('white');
     
 }
       else{
           song1.play();
-          background('red');
+          background('black');
       }
     
 }
